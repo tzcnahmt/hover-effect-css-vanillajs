@@ -1,0 +1,191 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Source Serif Pro", serif;
+    /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1;
+    background: wheat;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+div {
+    overflow: hidden;
+}
+p {
+    padding-top: 5%;
+    text-align: center;
+    color: red;
+}
+
+/* LANDING PAGE */
+.main__content {
+    /* position: relative; */
+
+    /* min-height: 100vh; */
+    margin: 0;
+    padding: 0;
+}
+
+.main__content div {
+    position: absolute;
+}
+
+.img1 {
+    width: 375px;
+    z-index: 4;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(100%);
+    animation-duration: 0.5s;
+}
+.img2 {
+    width: 375px;
+    z-index: 4;
+    top: 53%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(100%);
+    animation-duration: 0.5s;
+}
+.img3 {
+    width: 375px;
+    z-index: 3;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(100%);
+    animation-duration: 0.5s;
+}
+.img4 {
+    width: 375px;
+    z-index: 2;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(100%);
+    animation-duration: 0.5s;
+}
+.img5 {
+    width: 375px;
+    z-index: 1;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(100%);
+    animation-duration: 0.5s;
+}
+img {
+    transition: all 0.2s ease-in-out;
+}
+
+div img:hover {
+    transform: scale(1.05);
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover {
+    /* z-index: 99; */
+    filter: grayscale(0);
+    animation-name: anim;
+    animation-timing-function: ease;
+}
+
+.clicked {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+}
+
+.bg-images {
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: scale(0.1);
+}
+
+@keyframes anim {
+    0% {
+        filter: brightness(1);
+    }
+    7% {
+        filter: brightness(1.75);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}

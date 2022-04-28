@@ -3,4 +3,4 @@
 This was a personal experiment on image hover effect and image collapse animation.
 
 Preview:
-![Preview](./preview.gif){loop=""}
+<img src="./preview.gif" width="250" height="250"/>
